@@ -1,11 +1,156 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  height: 100vh;
+}
+
+.add_from{
+  height: 75px;
+  display: flex;
+  align-items: center;
+  border: 2px solid;
+  margin-bottom: 15px;
+}
+
+.add_from .description,.isdone_box{
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.add{
+  height: 60%;
+  margin-right: 15px;
+}
+
+.isdone_box{
+  height: 40px;
+  width: 35%;
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    
+}
+.description{
+  width: 50%;
+  height: 40px;
+}
+.input_des{
+  height: 40px;
+  width: 50%;
+  padding: 5px;
+  margin-right: 12px;
+  margin-left: 10px;
+  border: 2px solid;
+}
+
+.delete_box{
+  height: 45px;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter_form{
+  height: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.filter_form *{
+  height: 100%;
+  margin-left: 10px;
+}
+
+.delete_taks{
+  height: 75%;
+}
+
+.delete_taks *{
+  height: 100%;
+  margin-right: 10px;
+}
+
+.edit_box{
+  width: 40%;
+  border: 2px solid ;
+  padding: 15px;
+  position: absolute; 
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.edit_form{
+  display: flex;
+  flex-direction: column;
 }
+
+.des_edit{
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid;
+}
+.edit_isdone_box{
+  height: 35px;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table{
+  width: 100%;
+  margin-top: 1rem;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th{
+  background-color: lightgreen;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+th:nth-child(4){
+  width: 120px;
+}
+
+th:nth-child(3){
+  width: 100px;
+}
+.actions{
+  display: block;
+}
+
+.actions *{
+  margin: 2px;
+}
+
+.container{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
