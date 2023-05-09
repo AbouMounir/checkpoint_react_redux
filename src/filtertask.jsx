@@ -20,7 +20,7 @@ const FilterTast = () => {
     return(
         <>
           <form className="filter_form" action="" onSubmit={handleSubmit}>
-              <input type="submit" value='Filter' style={{backgroundColor:'black', color : 'white', width:'45px'}} />
+              <input className="btn" type="submit" value='Filter' style={{backgroundColor:'black', width:'45px'}} />
               <select name="" id="" value={select} onChange={e => setIndex(e.target.value)}>
                  <option value=""> All </option>
                  <option value="Is not done"> Is not done </option>

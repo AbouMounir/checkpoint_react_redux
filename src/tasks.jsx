@@ -9,8 +9,6 @@ import { deleteAllTask, deleteDoneTask, deleteTask } from "./reducers/taskReduce
 function Tasks() {
  
   const tasks = useSelector((state) => state.tasks);
-  const del = tasks.filter((item) => item.isDone == "Is done");
-  const del_isdone = del.map((item) => item.id);
 
   const dispatch = useDispatch();
 
@@ -33,8 +31,8 @@ function Tasks() {
           <div className="delete_box">
              <FilterTast />
              <div className="delete_taks">
-              <button style={{backgroundColor:'red', color : 'white',padding:'5px'}} onClick={handleDeleteDone}> Delete done taks </button>
-              <button style={{backgroundColor:'red', color : 'white',padding:'5px'}} onClick={handleDeleteAll}> Delete all taks </button>
+              <button className="btn" style={{backgroundColor:'red', color : 'white',padding:'5px'}} onClick={handleDeleteDone}> Delete done taks </button>
+              <button className="btn" style={{backgroundColor:'red', color : 'white',padding:'5px'}} onClick={handleDeleteAll}> Delete all taks </button>
              </div>
           </div>
           <table>
@@ -54,9 +52,9 @@ function Tasks() {
                     <td> {task.description} </td>
                     <td> {task.isDone} </td>
                     <td className="actions">
-                      <button style={{backgroundColor:'red', color : 'white'}} onClick={() => handleDelete(task.id)}> Delete </button>
+                      <button className="btn" style={{backgroundColor:'red', width:'45px', height:'25px'}} onClick={() => handleDelete(task.id)}> Delete </button>
                       <Link to={`/edit_task/:${task.id}`}> 
-                        <button style={{backgroundColor:'blue', color : 'white'}}> Edit </button> 
+                        <button className="btn"  style={{backgroundColor:'blue', width:'35px',height:'25px'}}> Edit </button> 
                       </Link>
                     </td>
                 </tr>

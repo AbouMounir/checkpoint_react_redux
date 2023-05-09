@@ -47,7 +47,7 @@ function AddTask() {
                 )
               })}
           </div>
-          <button style={{backgroundColor:'green', color : 'white'}} className="add"> Add Task </button>
+          <button className='btn' style={{backgroundColor:'green'}} className="add"> Add Task </button>
         </form>
     )
 }

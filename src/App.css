@@ -5,13 +5,22 @@
 }
 .App{
   height: 100vh;
+  background-color: #4e97d1;
+}
+
+.btn{
+  color : white;
+  border : 1px;
+  border-radius: 0.2rem
 }
 
 .add_from{
   height: 75px;
+  background-color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  border: 2px solid;
+  border: 1px solid;
   margin-bottom: 15px;
 }
 
@@ -28,7 +37,7 @@
 .isdone_box{
   height: 40px;
   width: 35%;
-  border: 2px solid;
+  border: 1px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;    
@@ -43,11 +52,12 @@
   padding: 5px;
   margin-right: 12px;
   margin-left: 10px;
-  border: 2px solid;
+  border: 1px solid;
 }
 
 .delete_box{
   height: 45px;
+  background-color: white;
   border: 1px solid;
   display: flex;
   justify-content: space-between;
@@ -76,7 +86,9 @@
 
 .edit_box{
   width: 40%;
-  border: 2px solid ;
+  background-color: white;
+  border: 1px solid ;
+  border-radius: .5rem;
   padding: 15px;
   position: absolute; 
   top: 50%;
@@ -91,16 +103,16 @@
 }
 
 .des_edit{
-  height: 30px;
+  height: 40px;
   padding: 5px;
-  margin: 5px;
-  border: 2px solid;
+  margin: 10px;
+  border: 1px solid;
 }
 .edit_isdone_box{
-  height: 35px;
+  height: 40px;
   padding: 5px;
-  margin: 5px;
-  border: 2px solid;
+  margin: 10px;
+  border: 1px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,8 +120,9 @@
 
 table{
   width: 100%;
+  background-color: white;
   margin-top: 1rem;
-  border: 2px solid black;
+  border: 1px solid black;
   border-collapse: collapse;
 }
 
@@ -149,35 +162,4 @@ th:nth-child(3){
   top: 50%;
   right: 50%;
   transform: translate(50%,-50%);
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
